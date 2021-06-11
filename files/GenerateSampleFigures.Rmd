@@ -1,0 +1,69 @@
+---
+title: "Generate sample figures to display in the template"
+editor_options:
+  chunk_output_type: console
+---
+
+```{r opts, include=FALSE}
+knitr::opts_chunk$set(fig.retina=2, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center')
+```
+
+```{r setup, message=FALSE, warning=FALSE, cache=FALSE, echo=FALSE}
+library(tidyverse)
+library(ggtext)
+library(palmerpenguins)
+library(normentR)
+```
+
+```{r load-data}
+data <- read_csv("diabetes.csv") %>% 
+  janitor::clean_names() %>% 
+  glimpse()
+```
+
+```{r}
+data %>% 
+  mutate(outcome_label = case_when(outcome == 1 ~ "Diabetes",
+                                   outcome == 0 ~ "Healthy")) %>% 
+  ggplot(aes(x = glucose, fill = outcome_label)) + 
+  geom_density(alpha = 0.75, color = "transparent", key_glyph = "point") +
+  labs(title = str_glue("Glucose distribution for
+                        <span style='color: {norment_colors[\'blue\']}'>**healthy individuals**</span> and 
+                        <span style='color: {norment_colors[\'purple\']}'>**patients with diabetes**</span>"),
+       x = "Glucose",
+       y = "Density",
+       fill = NULL) +
+  scale_fill_norment(discrete = TRUE, palette = "logo",
+                     guide = guide_legend(override.aes = list(size = 6, shape = 21))) +
+  theme(plot.title.position = "plot",
+        plot.title = element_textbox_simple(face = "plain"),
+        legend.text = element_markdown(size = 9),
+        legend.position = c(0.9,0.9),
+        plot.margin = margin(20,10,10,10, unit = "pt"))
+
+ggsave("example_density_plot.png", width = 6, height = 4)
+```
+
+```{r}
+data %>% 
+  mutate(outcome_label = case_when(outcome == 1 ~ "Diabetes",
+                                   outcome == 0 ~ "Healthy")) %>% 
+  ggplot(aes(x = bmi, fill = outcome_label)) + 
+  geom_density(alpha = 0.75, color = "transparent", key_glyph = "point") +
+  labs(title = str_glue("BMI for
+                        <span style='color: {norment_colors[\'blue\']}'>**healthy individuals**</span> and 
+                        <span style='color: {norment_colors[\'purple\']}'>**patients with diabetes**</span>"),
+       x = "BMI (<sup>kg</sup>/<sub>cm<sup>2</sup></sub>)",
+       y = "Density",
+       fill = NULL) +
+  scale_fill_norment(discrete = TRUE, palette = "logo",
+                     guide = guide_legend(override.aes = list(size = 6, shape = 21))) +
+  theme(plot.title.position = "plot",
+        plot.title = element_textbox_simple(face = "plain"),
+        axis.title.x = element_markdown(),
+        legend.text = element_markdown(size = 9),
+        legend.position = c(0.9,0.9),
+        plot.margin = margin(20,10,10,10, unit = "pt"))
+
+ggsave("example_density_plot2.png", width = 6, height = 4)
+```

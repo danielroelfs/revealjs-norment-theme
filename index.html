@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sample for alternative NORMENT presentation theme</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/norment.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
+
+		<!--<link rel="icon" href="lib/norment/logo/radiant-orange/mark-knockout.svg"/>-->
+		<link rel="icon" href="lib/norment/logo/color/mark-outline.svg"/>
+		<link rel="icon" href="lib/norment/logo/color/mark-outline.png"/>
+	</head>
+	<body>
+
+		<div class="reveal pattern--norment">
+			<div class="slides">
+
+				<!-- SLIDE -->
+				<section class="title" data-state="hide-controls">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo logo--full"></div>
+						</div>
+						<div class="content">
+							<h1>Enter your cool and scientific title for the project</h1>
+							<h3>And your subtitle goes here</h3>
+						</div>
+						<div class="credit">
+							<hr/>
+							<div class="name">Johanne Døe</div>
+							<div class="role">PhD Candidate</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Introduction</div>
+						</div>
+
+						<div class="content vcenter">
+							<ul class="no-bullets">
+								<li>A bold claim to start the presentation</li>
+								<li class="fragment em">"Another sentence relevant for the introduction"</li>
+								<li class="fragment">An example sentence with an <span class="colem">accented</span> word</li>
+								<li class="fragment">But this is what a slide would look like with a bulleted list</li>
+							</ul>
+						</div>
+
+						<div class="footer">
+							<div class="source">This is where the references or sources go, the next slide has a more elaborate example</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Introduction</div>
+						</div>
+
+						<div class="two-column" style="align-items: baseline;grid-gap: 4vmin;">
+
+							<div class="column">
+								<ul>
+									<li>Here's an example of two columns of text</li>
+									<li>This time aligned at the top! How exciting.</li>
+									<li>This list contains no relevant info I think</li>
+									<li>but well.. here we are</li>
+								</ul>
+							</div>
+
+							<div class="column">
+								<ul>
+									<li>I'm not sure anyone really uses two-column text blocks</li>
+									<li>It seems to me it makes the slide very busy</li>
+									<li>Good time to show the source style though</li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="footer">
+							<div class="source">A. Andersen & A. Eriksdottír, <em>Diabetes patients and glucose levels</em>, PLOS One (2019)</div>
+							<div class="source">R. McDonald & B. King, <em>Insulin levels and its implication for mental health; a systematic review</em>, Nat. Comms. (2021)</div>
+							<div class="source">B. Hauzer, A.Z. Triene, & F. Lumin, <em>Depression and psychosis disorders are genetically related to CNV variants</em>, Psych. Gen. (2017)</div>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+								<div class="section">Introduction</div>
+							</div>
+
+							<div class="two-column">
+
+								<div class="column">
+									<ul>
+										<li>This is a two-column slide</li>
+										<li>This time with a bulleted list with dots</li>
+										<li>This is also the first of a set of vertical slides, click down to access the next slide</li>
+									</ul>
+								</div>
+
+								<div class="column">
+									<img src="files/example_density_plot.png">
+									<figcaption><b>Figure 1</b> - Glucose distribution between HCs and diabetes patients</figcaption>
+								</div>
+
+							</div>
+
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="grid-wrapper">
+							<div class="header" id>
+								<div class="logo"></div>
+								<div class="section">Introduction</div>
+							</div>
+						
+							<div class="two-column">
+
+								<div class="column">
+									<img src="files/example_density_plot2.png">
+									<figcaption><b>Figure 2</b> - Glucose distribution between HCs and diabetes patients</figcaption>
+								</div>
+							
+								<div class="column">
+									<ul>
+										<li>Oh no! more slides!</li>
+										<li>Vertical slides are great at grouping related slides</li>
+										<li>Be careful about using them though, because the geometry of the presentation might suffer</li>
+										<li>Also check out the notes for this slide!</li>
+									</ul>
+								</div>
+								
+							</div>
+							
+						</div>
+
+						<aside class="notes">
+							Look, a note to help you through the presentation 📝
+						</aside>
+					</section>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Look! A table!</div>
+						</div>
+
+						<table>
+							<tr class="color--purple">
+								<th></th>
+								<th>TOP & BUPGEN</th>
+								<th>UK Biobank</th>
+							 </tr>
+							<tr>
+							   <td class="bem">Age</td>
+							   <td>Younger (some range)</td>
+							   <td>Older (another range)</td>
+							</tr>
+							<tr>
+							   <td class="bem">Another feature</td>
+							   <td>0.42 (<em>p</em> = 0.01)</td>
+							   <td>0.39 (<em>p</em> = 0.65)</td>
+							</tr>
+							<tr>
+							   <td class="bem">Variable ABC</td>
+							   <td class="color--magenta">42%</td>
+							   <td>52%</td>
+							</tr>
+							<tr>
+								<td class="bem" rowspan=2>Fancy, two rows</td>
+								<td><b>TOP:</b> 345</td>
+								<td>1650</td>
+							</tr>
+							<tr>
+								<td><b>BUPGEN:</b> 87</td>
+								<td class="color--green">4612</td>
+							</tr>
+							<tr>
+								<td class="bem">Availability</td>
+								<td colspan=2 style="text-align: center;"><em>on TSD</em></th>
+							 </tr>
+							 <tr>
+								 <td class="bem">Last variable</td>
+								 <td>Bliep</rd>
+								 <td>Bloep</rd>
+							 </tr>
+							<tfoot>
+								<tr>
+								  <td colspan=3><b>Source:</b> someone in a bar told me</td>
+								</tr>
+							  </tfoot>
+						</table>
+
+						An example table for those who don't just screenshot their Word document
+						
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+								<div class="section">Large image example</div>
+							</div>
+
+							<figure class="large-image">
+								<img src="https://unsplash.com/photos/lE5-z4nTCTQ/download?force=true&w=1920" class="large-image">
+							</figure>
+
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="color--black">
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+								<div class="section">Large image example (with black background)</div>
+							</div>
+
+							<figure class="large-image">
+								<img src="https://unsplash.com/photos/lE5-z4nTCTQ/download?force=true&w=1920" class="large-image">
+							</figure>
+
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="fullscreen">
+						<img src="https://unsplash.com/photos/lE5-z4nTCTQ/download?force=true&w=1920">
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section>
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+							</div>
+
+							<h1 class="animated-text" style="color: var(--purple);">
+								<span style="font-weight: 200;">important!</span>
+								<br>
+								<span style="text-transform: uppercase;">This is a flashing text</span>
+							</h1>
+
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="color--darkgrey">
+						<div class="grid-wrapper">
+							<div class="header">
+								<div class="logo"></div>
+							</div>
+
+							<h1 class="animated-text">
+								<span style="font-weight: 200;">not sure where you'd use this for</span>
+								<br>
+								<span style="text-transform: uppercase;">But it can be fun?</span>
+							</h1>
+
+						</div>
+					</section>
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--purple">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--magenta">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--blue">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--green">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--yellow">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="subsection color--darkgrey">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<h1>Section divider slides</h1>
+							<div class="description">
+								Other options are displayed in the vertical slides
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section>
+
+					<!-- SUBSLIDE -->
+					<section class="quote color--purple">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<blockquote>
+								<em>"The data may not contain the answer. The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data"</em>
+								<hr/>
+								<cite>John W. Tukey (1986)</cite>
+							</blockquote>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="quote color--midnight">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<blockquote>
+								<em>"The data may not contain the answer. The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data"</em>
+								<hr/>
+								<cite>John W. Tukey (1986)</cite>
+							</blockquote>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="quote color--blue">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<blockquote>
+								<em>"The data may not contain the answer. The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data"</em>
+								<hr/>
+								<cite>John W. Tukey (1986)</cite>
+							</blockquote>
+						</div>
+					</section>
+
+					<!-- SUBSLIDE -->
+					<section class="quote color--yellow">
+						<div class="grid-wrapper">
+							<div class="logo"></div>
+							<blockquote>
+								<em>These blockquote-style slides are available in all other NORMENT colors too.<br>Like in the section divider slides</em>
+								<hr/>
+								<cite>Yellow isn't very pretty though...</cite>
+							</blockquote>
+						</div>
+					</section>
+
+					
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="code color--dark">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Code Example</div>
+						</div>
+						<figure class="code">
+							<pre><code>
+								data <- read_csv("data.csv")
+
+								data %>% 
+  								  mutate(outcome_label = case_when(outcome == 1 ~ "Diabetes",
+  								                                   outcome == 0 ~ "Healthy")) %>% 
+  								  ggplot(aes(x = glucose, fill = outcome_label)) + 
+  								  geom_density(alpha = 0.75, color = "transparent", key_glyph = "point") +
+  								  labs(title = str_glue("Glucose distribution for **healthy individuals** and **patients with diabetes**"),
+  								       x = "Number of pregnancies",
+  								       y = "Density",
+  								       fill = NULL) +
+  								  scale_fill_norment(discrete = TRUE, palette = "logo",
+  								                     guide = guide_legend(override.aes = list(size = 6, shape = 21))) +
+  								  theme(plot.title.position = "plot",
+  								        plot.title = element_textbox_simple(face = "plain"),
+  								        legend.text = element_markdown(size = 9),
+  								        legend.position = c(0.9,0.9),
+  								        plot.margin = margin(20,10,10,10, unit = "pt"))
+
+							</code></pre>
+							<!-- figcaption element is optional, can be placed above or below code  -->
+							<figcaption class="path">/cluster/project/p33/.../&lt;some path&gt;/&lt;filename&gt;.R</figcaption>
+						</figure>
+					</div>
+				</section>
+
+				<!-- SLIDE -->
+				<section class="end color--green" data-state="hide-controls">
+					<div class="logo-wrapper">
+						<div class="logo"></div>
+
+						<div>
+							<div class="coll_logo"><img src="lib/norment/other/UiO_white.svg"></div>
+							<div class="coll_logo" style="width: 15%;"><img src="lib/norment/other/OUS_logo_HVIT_eng.png"></div>
+							<div class="coll_logo"><img src="lib/norment/other/UiBlogo_Eng_white_left.svg"></div>
+							<div class="coll_logo"><img src="lib/norment/other/Haukeland_white.svg"></div>
+							<div class="coll_logo" style="width: 10%;"><img src="lib/norment/other/CoE_white.png"></div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- SLIDE -->
+				<section class="screensaver" data-state="hide-controls">
+					<div class="logo-wrapper">
+						<div class="logo"></div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- PLUGINS -->
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+
+		<!-- REVEAL.JS SETTINGS -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="dist/reveal-init.js"></script>
+	</body>
+</html>
