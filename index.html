@@ -292,9 +292,9 @@
 							</div>
 
 							<h1 class="animated-text">
-								<span style="font-weight: 200;">not sure where you'd use this for</span>
+								<span style="font-weight: 200;">not sure what you'd use this for</span>
 								<br>
-								<span style="text-transform: uppercase;">But it can be fun?</span>
+								<span style="text-transform: uppercase;">but it can be fun?</span>
 							</h1>
 
 						</div>
@@ -436,25 +436,23 @@
 						</div>
 						<figure class="code">
 							<pre><code>
-								data <- read_csv("data.csv")
-
-								data %>% 
-  								  mutate(outcome_label = case_when(outcome == 1 ~ "Diabetes",
-  								                                   outcome == 0 ~ "Healthy")) %>% 
-  								  ggplot(aes(x = glucose, fill = outcome_label)) + 
-  								  geom_density(alpha = 0.75, color = "transparent", key_glyph = "point") +
-  								  labs(title = str_glue("Glucose distribution for **healthy individuals** and **patients with diabetes**"),
-  								       x = "Number of pregnancies",
-  								       y = "Density",
-  								       fill = NULL) +
-  								  scale_fill_norment(discrete = TRUE, palette = "logo",
-  								                     guide = guide_legend(override.aes = list(size = 6, shape = 21))) +
-  								  theme(plot.title.position = "plot",
-  								        plot.title = element_textbox_simple(face = "plain"),
-  								        legend.text = element_markdown(size = 9),
-  								        legend.position = c(0.9,0.9),
-  								        plot.margin = margin(20,10,10,10, unit = "pt"))
-
+data <- read_csv("data.csv")
+data %>% 
+  mutate(outcome_label = case_when(outcome == 1 ~ "Diabetes",
+                                   outcome == 0 ~ "Healthy")) %>% 
+  ggplot(aes(x = glucose, fill = outcome_label)) + 
+  geom_density(alpha = 0.75, color = "transparent", key_glyph = "point") +
+  labs(title = str_glue("Glucose distribution for **healthy individuals** and **patients with diabetes**"),
+       x = "Number of pregnancies",
+       y = "Density",
+       fill = NULL) +
+  scale_fill_norment(discrete = TRUE, palette = "logo",
+                     guide = guide_legend(override.aes = list(size = 6, shape = 21))) +
+  theme(plot.title.position = "plot",
+        plot.title = element_textbox_simple(face = "plain"),
+        legend.text = element_markdown(size = 9),
+        legend.position = c(0.9,0.9),
+        plot.margin = margin(20,10,10,10, unit = "pt"))
 							</code></pre>
 							<!-- figcaption element is optional, can be placed above or below code  -->
 							<figcaption class="path">/cluster/project/p33/.../&lt;some path&gt;/&lt;filename&gt;.R</figcaption>
