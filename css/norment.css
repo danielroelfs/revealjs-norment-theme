@@ -132,14 +132,7 @@ body .fullscreen {
 
 figure .large-image {
   margin-top: -5.5vmin !important;
-  min-width: 100vw !important;
   margin-left: -10vmin !important;
-}
-
-.large-image img {
-  min-width: 99%;
-  min-height: 99%;
-  object-fit: contain;
 }
 
 .hide-controls .controls {
